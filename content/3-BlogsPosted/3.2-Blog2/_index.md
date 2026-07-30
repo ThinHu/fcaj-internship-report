@@ -1,9 +1,9 @@
 ---
-title: "Blog 1"
-date: 2024-01-01
-weight: 1
+title: "Blog 2: AWS Cognito for Digital Healthcare System"
+date: 2026-07-30
+weight: 2
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: " <b> 3.2. </b> "
 ---
 
 # WHAT IS AWS COGNITO? WHY IS IT AN INDISPENSABLE PIECE FOR DIGITAL HEALTHCARE SYSTEMS?

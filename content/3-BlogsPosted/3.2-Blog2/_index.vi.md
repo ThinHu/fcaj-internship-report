@@ -1,9 +1,9 @@
 ---
-title: "Blog 1"
-date: 2024-01-01
-weight: 1
+title: "Blog 2: AWS Cognito cho Hệ thống Y tế số"
+date: 2026-07-30
+weight: 2
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: " <b> 3.2. </b> "
 ---
 
 # AWS COGNITO LÀ GÌ? TẠI SAO ĐÂY LÀ "MẢNH GHÉP" KHÔNG THỂ THIẾU CHO HỆ THỐNG Y TẾ SỐ?

@@ -1,31 +1,24 @@
 ---
-title: "Blog 2"
+title: "Blog 1"
 date: 2024-01-01
 weight: 1
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# WHAT IS AWS COGNITO? WHY IS IT AN INDISPENSABLE PIECE FOR DIGITAL HEALTHCARE SYSTEMS?
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+During the development of the Smart Healthcare Platform (an AI-powered medical triage and appointment booking system), managing identity and multi-role access control (Authentication & Authorization) posed a significant challenge. The system serves 3 completely distinct user groups: Patients, Doctors, and Receptionists. Instead of manually building a complex authentication service, integrating AWS Cognito was chosen as the optimal solution.
 
 Key points to know:
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+* AWS Cognito is a Fully Managed Identity & Access Management service that supports both User Pools (user directory management) and Identity Pools (granting access to AWS resources).
+* Completely solves the multi-role access control problem (RBAC - Role-Based Access Control) using the `cognito:groups` attribute embedded directly inside JWT Tokens.
+* Supports a secure onboarding workflow for healthcare staff: Admins create accounts via API, Cognito automatically sends an email with a temporary password, and forces a password change upon the first login.
+* The Backend Service (NestJS) seamlessly verifies tokens using Cognito's Public Key without storing any user passwords in the database.
+* Integrates a UUID encryption strategy to anonymize original user identities, meeting strict compliance standards for sensitive healthcare data.
+* Optimizes development and operational costs thanks to a generous AWS Free Tier allowance of up to 50,000 MAUs (Monthly Active Users) per month.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+This post helps you understand why offloading the security and auth infrastructure burden to cloud-native services like AWS Cognito allows you to dedicate 100% of your resources to optimizing core business logic.
 
-...Image...
-
-...Link...
-
-...Guide...
+See details [Here](<https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228021697962790/?rdid=MLFJXbxXfs8sMMKH#>)

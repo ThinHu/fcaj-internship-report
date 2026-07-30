@@ -6,12 +6,8 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at the **First Cloud AI Journey (FCAJ) Internship Program** from **01/06/2026** to **15/08/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+I participated in **developing an enterprise artificial intelligence (AI) application utilizing distributed microservices architecture and advanced knowledge retrieval (Advanced RAG) workflows on a cloud computing platform, taking on a self-directed role as an AI Engineer**, through which I improved my skills in **backend system programming, resilient AI architecture design, Cloud Cost Optimization (FinOps), Large Language Model monitoring and evaluation (Observability), technical Workshop documentation writing, and agile teamwork under high pressure**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 

@@ -6,12 +6,8 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Trong suốt thời gian thực tập tại **Chương trình thực tập First Cloud AI Journey (FCAJ)** từ **01/06/2026** đến **15/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Tôi đã tham gia **phát triển dự án ứng dụng trí tuệ nhân tạo (AI) áp dụng kiến trúc phân tán (Microservices) và truy hồi tri thức nâng cao (Advanced RAG) trên nền tảng điện toán đám mây với vai trò tự định hướng là Kỹ sư AI (AI Engineer)**, qua đó cải thiện kỹ năng **lập trình hệ thống backend, thiết kế kiến trúc AI đàn hồi, tối ưu hóa chi phí điện toán đám mây (FinOps), giám sát và đánh giá mô hình ngôn ngữ lớn (Observability), soạn thảo tài liệu hướng dẫn kỹ thuật và làm việc nhóm dưới áp lực cao**.  
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
 

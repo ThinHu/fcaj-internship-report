@@ -5,40 +5,51 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+> Tại đây là những chia sẻ, cảm nhận và đóng góp ý kiến cá nhân của tôi về trải nghiệm trong suốt lộ trình 8 tuần thực tập tại chương trình First Cloud AI Journey (FCAJ), nhằm giúp team FCAJ tiếp tục duy trì và nâng cao chất lượng chương trình cho các khóa sau.
 
 ### Đánh giá chung
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+**1. Môi trường làm việc & Học tập**  
+Môi trường thực tập tại chương trình FCAJ rất chuyên nghiệp, năng động và cởi mở. Các thành viên luôn sẵn sàng chia sẻ kiến thức, hỗ trợ lẫn nhau trong quá trình làm việc, kể cả ngoài giờ hành chính. Không gian giao tiếp trực tuyến và trực tiếp được bố trí khoa học, tạo điều kiện thuận lợi để thực tập sinh duy trì sự tập trung và phát huy tối đa tính sáng tạo.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+**2. Sự hỗ trợ của Mentor / Team Admin**  
+Các anh chị Mentor có kiến thức chuyên môn vững vàng và tận tâm, luôn theo sát tiến độ hàng tuần và hướng dẫn phương pháp tư duy giải quyết vấn đề tự lập thay vì chỉ đưa ra câu trả lời sẵn. Ban tổ chức (Admin Team) hỗ trợ nhanh chóng các thủ tục hành chính, cung cấp tài liệu học tập phong phú và tạo môi trường thuận lợi để thực tập sinh nghiên cứu, hoàn thành tốt nhiệm vụ.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Nhiệm vụ được giao trong kỳ thực tập liên kết chặt chẽ với kiến thức chuyên ngành ở trường đại học, đồng thời mang tính thực chiến cao. Là một thực tập sinh tự định hướng theo vai trò Kỹ sư AI (AI Engineer), tôi đã có cơ hội vận dụng lý thuyết vào việc thiết kế và triển khai các kiến trúc điện toán đám mây và ứng dụng trí tuệ nhân tạo, giúp củng cố kiến thức vững chắc.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+**4. Cơ hội học hỏi & Phát triển kỹ năng**  
+Lộ trình 8 tuần mang lại cơ hội học hỏi toàn diện. Bên cạnh kiến thức kỹ thuật nâng cao về hệ thống đám mây và trí tuệ nhân tạo, tôi còn rèn luyện các kỹ năng mềm quan trọng như: quản lý công việc và tiến độ dự án, giao tiếp chuyên nghiệp trong doanh nghiệp, kỹ năng thuyết trình và hợp tác nhóm hiệu quả dưới áp lực thời gian.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**5. Văn hóa & Tinh thần đồng đội**  
+Văn hóa của chương trình đề cao sự tôn trọng, tinh thần hợp tác và chia sẻ. Trong những giai đoạn nước rút hoàn thiện dự án và báo cáo cuối khóa, các thành viên trong nhóm luôn đoàn kết, sẵn sàng hỗ trợ lẫn nhau không phân biệt vai trò. Không khí làm việc vừa nghiêm túc vừa thân thiện giúp tôi cảm thấy thực sự gắn kết với tập thể.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+**6. Chính sách & Phúc lợi cho thực tập sinh**  
+Chương trình cung cấp các quyền lợi và mức hỗ trợ phù hợp, đồng thời duy trì sự linh hoạt về thời gian làm việc để thực tập sinh có thể cân bằng với lịch học tập cá nhân. Đặc biệt, cơ hội được sử dụng các tài nguyên thực hành thực tế, tham gia các buổi chia sẻ công nghệ chuyên sâu và kết nối với mạng lưới chuyên gia trong ngành là giá trị lớn nhất của chương trình.
 
+---
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
 
+- **Điều bạn hài lòng nhất trong thời gian thực tập?**  
+  Điều tôi hài lòng nhất là được tự do khám phá, nghiên cứu và áp dụng các mô hình công nghệ hiện đại vào một dự án có tính thực tế cao, dưới sự hướng dẫn nhiệt tình của các Mentor. Sự trưởng thành về tư duy kỹ thuật sau 8 tuần là điều khiến tôi tự hào nhất.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+- **Điều bạn nghĩ chương trình cần cải thiện cho các thực tập sinh sau?**  
+  Chương trình có thể tổ chức thêm các buổi giao lưu ngắn định kỳ hoặc các hoạt động kết nối (networking) giữa các nhóm dự án khác nhau để tăng cường trao đổi kiến thức chéo và thắt chặt tinh thần cộng đồng.
+
+- **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+  Chắc chắn là có. FCAJ là môi trường thực tập tuyệt vời giúp sinh viên công nghệ chuyển dịch mượt mà từ kiến thức lý thuyết trong trường học sang môi trường làm việc chuẩn doanh nghiệp với tư duy kỹ thuật thực chiến cao.
+
+---
+
+### Đề xuất & Mong muốn
+
+- **Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**  
+  Tôi đề xuất chương trình tiếp tục duy trì lộ trình 8 tuần logic như hiện tại, đồng thời mở rộng thêm các tài liệu hướng dẫn thực hành chung cho những xu hướng công nghệ mới để thực tập sinh có thêm nguồn tham khảo phong phú.
+
+- **Bạn có muốn tiếp tục chương trình này trong tương lai?**  
+  Tôi rất mong muốn được tiếp tục đồng hành cùng cộng đồng FCAJ trong tương lai, có thể dưới vai trò cựu thực tập sinh tham gia chia sẻ kinh nghiệm hoặc hỗ trợ hướng dẫn chuyên môn cho các khóa tiếp theo.
+
+- **Góp ý khác (tự do chia sẻ):**  
+  Xin gửi lời cảm ơn chân thành đến đội ngũ Mentor và Ban tổ chức FCAJ đã tạo nên một kỳ thực tập ý nghĩa, chuyên nghiệp và đáng nhớ!

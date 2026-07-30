@@ -1,125 +1,81 @@
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "FCAJ - Agentic AI Build Week"
+date: 2026-07-25
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch: “FCAJ - Agentic AI Build Week (25/07/2026)”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tạo không gian giao lưu công nghệ và chia sẻ kiến thức chuyên sâu, nơi các anh chị Kỹ sư và chuyên gia từ AWS chia sẻ hành trình tham gia các giải đấu Hackathon và kinh nghiệm phát triển sản phẩm thực tế.
+- Mang đến góc nhìn tổng quan về cách vận dụng linh hoạt các kiến trúc điện toán đám mây vào việc giải quyết các thách thức nghiệp vụ và bài toán kinh doanh thực tiễn trong doanh nghiệp.
+- Thảo luận về tư duy thiết kế hệ thống hiện đại, phương pháp tối ưu hóa hiệu năng, bảo mật hạ tầng và chiến lược kiểm soát chi phí vận hành Cloud (FinOps).
+- Truyền cảm hứng, giúp các thực tập sinh học hỏi tư duy làm việc nhóm cường độ cao, kỹ năng giải quyết vấn đề và chuẩn bị tâm thế sẵn sàng cho giai đoạn hoàn thành lộ trình thực tập.
 
-### Danh Sách Diễn Giả
+### Diễn Giả & Khách Mời Chia Sẻ
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Đại diện 5 Đội thi Hackathon tiêu biểu từ AWS:**
+  - Gồm các anh chị Kỹ sư Kiến trúc Giải pháp (Solutions Architects), Cloud Engineers và Builders đang công tác tại AWS.
+  - Các đội đã trình bày tổng thể về hành trình tham gia Hackathon: từ khâu lên ý tưởng ban đầu, phân tích bài toán thực tế, lựa chọn kiến trúc đám mây phù hợp, cho đến những bài học kinh nghiệm trong quá trình triển khai nguyên mẫu dưới áp lực thời gian ngắn.
+- **Hội đồng Cố vấn Kỹ thuật:** Các chuyên gia cao cấp tham gia trao đổi, đánh giá các giải pháp dựa trên tiêu chí tính ổn định, độ an toàn bảo mật và tính khả thi khi áp dụng vào thực tiễn.
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+Sự kiện tập trung vào tư duy kiến trúc và phương pháp luận giải quyết bài toán thực tế. Nội dung chia sẻ của 5 đội thi được tổng hợp theo các chủ đề cốt lõi sau:
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### 1. Áp Dụng Kiến Trúc Đám Mây Vào Giải Quyết Bài Toán Thực Tế
+- **Đa dạng hóa bài toán nghiệp vụ:** Các anh chị trong 5 đội thi đã mang đến những bài toán phong phú từ nhiều lĩnh vực khác nhau: từ tối ưu hóa quy trình vận hành nội bộ, nâng cao trải nghiệm khách hàng, tự động hóa xử lý dữ liệu cho đến quản trị an ninh mạng.
+- **Tư duy lựa chọn kiến trúc:** Điểm chung nổi bật của các đội là sự nhạy bén trong việc lựa chọn các mô hình kiến trúc không máy chủ (Serverless) và các dịch vụ quản lý sẵn (Managed Services) để rút ngắn thời gian phát triển sản phẩm mà vẫn đảm bảo độ tin cậy và khả năng mở rộng của hệ thống.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 2. Chiến Lược Tối Ưu Hóa Luồng Xử Lý & Nâng Cao Độ Chính Xác
+- **Giải bài toán độ tin cậy:** Trong môi trường doanh nghiệp thực tế, hệ thống không chỉ cần chạy nhanh mà còn phải đảm bảo tính chính xác và độ ổn định cao.
+- **Giải pháp thiết kế:** Các đội đã chia sẻ kỹ thuật thiết kế hệ thống theo hướng phân rã tác vụ (Modular Design), giúp cô lập lỗi, dễ dàng kiểm thử và kiểm soát luồng dữ liệu đầu vào - đầu ra chặt chẽ nhằm tránh sai sót trong quá trình xử lý tự động.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 3. Tối Ưu Hóa Giao Tiếp Hệ Thống & Hiệu Năng Vận Hành
+- **Xử lý nghẽn cổ chai:** Khi hệ thống phát triển lớn với nhiều thành phần giao tiếp lẫn nhau, độ trễ xử lý tổng thể thường là thách thức lớn nhất.
+- **Kinh nghiệm thực chiến:** Các anh chị chia sẻ kinh nghiệm sử dụng các mô hình giao tiếp bất đồng bộ và cơ chế truyền phát dữ liệu theo thời gian thực để mang lại trải nghiệm phản hồi mượt mà, giúp người dùng cuối không có cảm giác phải chờ đợi hệ thống xử lý.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### 4. Quản Trị Chi Phí (FinOps) & Bảo Mật Tiêu Chuẩn Doanh Nghiệp
+- **Cân bằng giữa hiệu năng và chi phí:** Các đội thi nhấn mạnh tầm quan trọng của việc thiết kế hệ thống tối ưu chi phí ngay từ giai đoạn đầu, áp dụng các cơ chế bộ nhớ đệm (Caching) linh hoạt để giảm tải cho hạ tầng.
+- **An toàn thông tin là ưu tiên hàng đầu:** Chia sẻ cách xây dựng các ranh giới mạng riêng tư an toàn, áp dụng nguyên tắc phân quyền tối thiểu (Least Privilege) để bảo vệ dữ liệu nghiệp vụ khỏi các rủi ro bảo mật từ bên ngoài.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy Kiến Trúc & Giải Quyết Vấn Đề (Architectural Mindset)
+- **Luôn bắt đầu từ nhu cầu thực tế (Business-first Approach):** Bài học lớn nhất từ các anh chị AWS là luôn xuất phát từ nỗi đau thực tế của khách hàng (Customer Pain Points) để thiết kế giải pháp phù hợp, thay vì phụ thuộc một cách rập khuôn vào công nghệ.
+- **Tinh thần thử nghiệm & Khắc phục nhanh (Fail Fast, Learn Faster):** Nhận thức rằng trong các cuộc thi Hackathon hay các dự án đổi mới sáng tạo, việc dám thử nghiệm giải pháp mới, chấp nhận sai sót sớm và nhanh chóng tái cấu trúc là chìa khóa để tiến bộ.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### Kỹ Năng & Thực Tiễn Vận Hành
+- **Tính chuẩn hóa và dễ bảo trì:** Hiểu được tầm quan trọng của việc viết mã nguồn sạch, cấu trúc dự án khoa học và duy trì hệ thống giám sát (Monitoring/Observability) để dễ dàng phát hiện, xử lý lỗi khi hệ thống gặp sự cố.
+- **Sức mạnh của làm việc nhóm (Teamwork):** Ngưỡng mộ tinh thần phối hợp ăn ý, cách phân chia công việc rõ ràng và sự hỗ trợ lẫn nhau của các thành viên trong các đội thi dưới áp lực thời gian.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+Những chia sẻ thực chiến từ 5 đội thi AWS đã mang lại nguồn cảm hứng và các chỉ dẫn giá trị để tôi rà soát, hoàn thiện dự án thực tập của nhóm trong tuần cuối khóa:
+- **Chuẩn hóa kiến trúc hệ thống:** Áp dụng tư duy thiết kế mô-đun và các nguyên tắc bảo mật học được từ sự kiện để rà soát lại luồng xử lý dữ liệu, đảm bảo hệ thống vận hành ổn định và an toàn.
+- **Tối ưu hóa hiệu năng & Chi phí:** Áp dụng kinh nghiệm kiểm soát tài nguyên và bộ nhớ đệm từ các anh chị để tinh chỉnh hiệu năng tổng thể, giúp dự án thực tập hoạt động mượt mà với mức chi phí hạ tầng tối ưu nhất.
+- **Chăm chút tài liệu kỹ thuật & Đóng gói dự án:** Học hỏi cách các đội thi trình bày dự án minh bạch, khúc chiết, tôi cùng nhóm đã rà soát lại toàn bộ mã nguồn và hoàn thiện tài liệu hướng dẫn thực hành (Workshop), sẵn sàng cho kỳ đánh giá cuối khóa của chương trình FCAJ.
 
-### Trải nghiệm trong event
+### Trải Nghiệm Thực Tế Tại Sự Kiện
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham dự ngày hội **FCAJ - Agentic AI Build Week** vào ngày 25/07/2026 với tư cách người lắng nghe đã mang lại cho tôi những trải nghiệm vô cùng đáng nhớ:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### 1. Ngưỡng mộ tài năng và tinh thần chia sẻ từ các anh chị AWS
+- Việc được lắng nghe trực tiếp 5 đội thi gồm các anh chị kỹ sư giàu kinh nghiệm tại AWS chia sẻ về hành trình Hackathon mang lại cảm giác vô cùng gần gũi và truyền cảm hứng. Các anh chị không chỉ kể về thành công mà còn rất thẳng thắn chia sẻ những khó khăn, các lỗi hệ thống từng gặp phải và cách cả đội cùng nhau vượt qua.
+- Phong cách thuyết trình tự tin, logic chặt chẽ cùng sự am hiểu sâu sắc về kiến trúc hệ thống của các anh chị chính là hình mẫu chuyên nghiệp mà tôi luôn hướng tới trong sự nghiệp phát triển phần mềm của mình.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### 2. Mở rộng tầm nhìn về ứng dụng công nghệ trong thực tế
+- Việc quan sát cách 5 đội thi giải quyết 5 bài toán hoàn toàn khác nhau giúp tôi nhận ra sự uyển chuyển và sức mạnh vô hạn của các kiến trúc hạ tầng hiện đại. Kiến thức và tầm nhìn của tôi được mở rộng sang nhiều lĩnh vực nghiệp vụ phong phú trong nền kinh tế số.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### 3. Không khí học hỏi sôi nổi và truyền cảm hứng
+- Diễn ra vào thời điểm nước rút chuẩn bị nộp bài báo cáo, sự kiện như một nguồn động lực tinh thần tuyệt vời. Phần thảo luận Q&A diễn ra vô cùng sôi nổi, mọi câu hỏi thắc mắc của thực tập sinh về cách tối ưu hóa kiến trúc hay cách xử lý tình huống thực tế đều được các anh chị giải đáp tận tình, tỉ mỉ.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Một số hình ảnh tham khảo từ sự kiện Build Week
+![FCAJ - Agentic AI Build Week 1](/images/4-EventParticipated/event2_1.jpg)
+![FCAJ - Agentic AI Build Week 2](/images/4-EventParticipated/event2_2.jpg)
+![FCAJ - Agentic AI Build Week 3](/images/4-EventParticipated/event2_3.jpg)
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> **Tổng kết:** Sự kiện FCAJ - Agentic AI Build Week là một dấu ấn đáng nhớ trong tuần cuối cùng của kỳ thực tập. Những bài học thực chiến và tinh thần Hackathon từ 5 đội thi AWS đã giúp tôi hoàn thiện tư duy thiết kế kiến trúc hệ thống, tự tin áp dụng vào việc trau chuốt dự án thực tập và sẵn sàng hoàn tất kỳ đánh giá cuối khóa của chương trình FCAJ.

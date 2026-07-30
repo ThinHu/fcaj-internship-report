@@ -1,126 +1,81 @@
 ---
-title: "Event 2"
-date: 2024-01-01
-weight: 1
+title: "FCAJ - Agentic AI Build Week"
+date: 2026-07-25
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “FCAJ - Agentic AI Build Week (25/07/2026)”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Foster an interactive technical learning forum where senior engineers and builders from AWS share their hackathon journeys and practical product development experiences.
+- Provide comprehensive insights into leveraging modern cloud computing architectures to solve complex business challenges and industry-specific operational workflows.
+- Discuss modern system design principles, performance optimization methodologies, infrastructure security best practices, and Cloud Cost Optimization (FinOps) strategies.
+- Inspire interns by showcasing high-intensity teamwork, agile problem-solving mindsets, and innovative projects as they prepare to conclude their internship roadmap.
 
-### Speakers
+### Speakers & Guest Presenters
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Representatives from 5 Featured AWS Hackathon Teams:**
+  - Comprising senior Solutions Architects, Cloud Engineers, and Builders working within AWS.
+  - The teams presented holistic overviews of their hackathon participation: ranging from initial ideation and real-world problem analysis to cloud architecture selection and the invaluable lessons learned while building prototypes under tight time constraints.
+- **Technical Advisory Panel:** Senior experts who evaluated the showcased solutions based on system stability, security compliance, and practical business viability.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+The session focused heavily on architectural thinking and problem-solving methodologies. The technical presentations from the 5 teams are synthesized around the following core themes:
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+#### 1. Applying Cloud Architectures to Solve Real-World Problems
+- **Diverse Business Domain Applications:** The senior engineers across the 5 teams introduced a wide variety of practical use cases: optimizing internal operational workflows, elevating customer experiences, automating complex data processing, and enhancing network security governance.
+- **Architectural Selection Strategy:** A prominent shared highlight was the teams' agility in adopting Serverless compute models and Managed Services. This approach allowed them to significantly accelerate product development while maintaining system reliability and elastic scalability.
 
-#### Transitioning to modern application architecture – Microservices
+#### 2. Optimizing Processing Pipelines & Reliability
+- **Ensuring Operational Trust:** In real-world enterprise environments, systems must not only execute rapidly but also guarantee high accuracy and consistent operational stability.
+- **Design Methodology:** Presenters shared insights into modular system design and task decomposition. This approach isolates potential failures, simplifies testing, and strictly controls input-output data flows to prevent automated processing errors.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### 3. System Communication & Performance Optimization
+- **Overcoming Latency Bottlenecks:** As systems grow in complexity with multiple interacting components, managing end-to-end processing latency becomes a critical challenge.
+- **Battle-Tested Techniques:** The teams shared their experiences utilizing asynchronous communication patterns and real-time data streaming mechanisms. This ensures a seamless, responsive user experience, eliminating perceived system waiting times.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
-
-#### Domain-Driven Design (DDD)
-
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
-
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### 4. FinOps Governance & Enterprise Security Standards
+- **Balancing Performance and Cost:** Presenters emphasized the importance of designing cost-optimized architectures from the outset, adopting flexible caching mechanisms to reduce infrastructure load and API consumption.
+- **Security as a Top Priority:** The teams demonstrated how to construct secure private network boundaries and strictly enforce Least Privilege access control principles to safeguard business data against external security risks.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Architectural Mindset & Problem Solving
+- **Business-First Approach:** A major lesson from the senior AWS builders is to always initiate design from actual customer pain points rather than rigidly conforming to technology trends.
+- **Experimentation & Fail-Fast Mentality:** Understanding that in hackathons and innovation projects, the willingness to experiment with novel solutions, embrace early failures (Fail Fast), and rapidly refactor is the true catalyst for progress.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+#### Operational & Technical Skills
+- **Standardization and Maintainability:** Recognized the critical importance of writing clean code, maintaining a logical project structure, and implementing robust monitoring and observability to easily detect and resolve system anomalies.
+- **The Power of Effective Teamwork:** Deeply admired the seamless collaboration, clear role division, and mutual support exhibited by the participating teams under intense time pressure.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+The practical, battle-tested insights shared by the 5 AWS teams provided immense inspiration and valuable guidance as I reviewed and refined our internship project during the final week:
+- **Standardizing System Architecture:** Applying modular design thinking and security best practices learned from the event to review our data processing pipelines, ensuring stable and secure system operations.
+- **Optimizing Performance & Cost:** Implementing resource governance and caching strategies learned from the presenters to fine-tune overall system performance, allowing our internship project to operate smoothly at an optimal infrastructure cost.
+- **Polishing Technical Documentation & Project Packaging:** Inspired by how transparently and concisely the AWS teams presented their work, our team conducted a thorough review of our codebase and finalized our practical Workshop documentation, ready for the final FCAJ evaluation.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **FCAJ - Agentic AI Build Week** on July 25, 2026, as an active listener provided an unforgettable and enriching experience:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### 1. Admiration for Senior AWS Builders and Their Culture of Sharing
+- Listening directly to 5 teams of experienced AWS engineers share their hackathon journeys felt authentic and deeply inspiring. The speakers did not just celebrate their successes; they openly discussed their challenges, system bottlenecks encountered, and how their teams worked together to overcome them.
+- Their confident presentation style, rigorous logical reasoning, and deep understanding of system architecture represent the professional standard I aspire to achieve in my software engineering career.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### 2. Broadened Perspective on Technology Applications
+- Observing how 5 distinct teams solved 5 completely different problems highlighted the flexibility and limitless potential of modern cloud infrastructure architectures. My technical vision expanded across diverse industry workflows in the digital economy.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### 3. Engaging and Inspiring Learning Atmosphere
+- Taking place during our final sprint toward report submission, the event served as a fantastic source of intellectual and emotional motivation. The Q&A discussions were vibrant, with senior AWS engineers taking the time to thoroughly answer interns' questions regarding architectural optimization and real-world problem solving.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Reference Event Photos & Architectural Diagrams
+![FCAJ - Agentic AI Build Week 1](/images/4-EventParticipated/event2_1.jpg)
+![FCAJ - Agentic AI Build Week 2](/images/4-EventParticipated/event2_2.jpg)
+![FCAJ - Agentic AI Build Week 3](/images/4-EventParticipated/event2_3.jpg)
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+> **Conclusion:** The FCAJ - Agentic AI Build Week was a memorable milestone in the final week of my internship. The battle-tested lessons and hackathon spirit shared by the 5 AWS teams refined my system architectural mindset, boosting my confidence to polish our internship project and successfully conclude my FCAJ internship journey.

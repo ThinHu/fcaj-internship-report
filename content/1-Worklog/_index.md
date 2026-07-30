@@ -6,34 +6,22 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+In this section, I will summarize my worklog throughout the 8-week internship at AWS (First Cloud AI Journey 2026 Program).
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+My core project was building a **Smart Healthcare Platform** featuring appointment scheduling, multi-role user authentication, and medical AI integration. Below is the detailed weekly roadmap:
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+**Week 1:** [Project Kick-off and Learning AWS Fundamentals](1.1-week1/)
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+**Week 2:** [Cloud System Architecture and Database Design](1.2-week2/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 3:** [Developing Backend (NestJS) and Integrating AWS Cognito](1.3-week3/)
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Week 4:** [Developing the Anti-Overlap Appointment Scheduling Feature](1.4-week4/)
 
-**Week 4:** [Doing task C...](1.4-week4/)
+**Week 5:** [Applying AWS S3 Bucket for Medical Documents and Static Files](1.5-week5/)
 
-**Week 5:** [Doing task D...](1.5-week5/)
+**Week 6:** [Integrating AI Assistant with Serverless RAG using AWS Bedrock](1.6-week6/)
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 7:** [Frontend Development, API Integration, and System Testing](1.7-week7/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 8:** [Finalizing Reports, Writing Technical Blogs, and Internship Wrap-up](1.8-week8/)

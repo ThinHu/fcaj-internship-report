@@ -1,57 +1,26 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-06-01
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Objectives for Week 1:
+* Complete onboarding for the First Cloud AI Journey (FCAJ) program and align with the working culture and environment of the FCAJ system.
+* Connect with peers, form a project team, and establish the **Smart Healthcare Platform** healthcare AI initiative.
+* Set up cloud development environments, mastering AWS CLI, Boto3 SDK, and AWS IAM security best practices (Least Privilege).
 
-### Week 1 Objectives:
+### Tasks Implemented This Week:
+| Day | Task | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| **Mon** | - Attend the official FCAJ 2026 Kick-off ceremony.<br>- Consult with FCAJ Mentors and self-direct professional development toward the **AI Engineer** role within the project team. | 01/06/2026 | 01/06/2026 | [FCAJ Guideline](https://github.com/fcaj-2026) |
+| **Tue** | - Network with fellow interns and finalize core team members for the **Smart Healthcare Platform** project.<br>- Brainstorm initial concepts for automating clinical workflows using AI assistant platforms. | 02/06/2026 | 02/06/2026 | [Agile/Scrum Docs](https://scrumguides.org/) |
+| **Wed** | - Install and configure local development toolchains: VS Code/Cursor, Docker Desktop, Git, Python 3.11.<br>- Initialize the official GitHub Repository and establish standardized Git Flow conventions. | 03/06/2026 | 03/06/2026 | [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) |
+| **Thu** | - Set up AWS accounts (AWS Free Tier / Builder ID) and configure AWS CLI profiles.<br>- Provision IAM Users and Groups, strictly enforcing Least Privilege IAM Policies. | 04/06/2026 | 05/06/2026 | [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| **Fri** | - **Practice:** Develop introductory Python scripts utilizing the **Boto3 SDK** to interact with AWS Cloud services.<br>- Provision, read, and write sample medical documents to Amazon S3 and monitor basic logs in Amazon CloudWatch. | 06/06/2026 | 07/06/2026 | [Boto3 Docs](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) |
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 1 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Key Achievements:
+* Successfully onboarded into the FCAJ internship program and aligned with the FCAJ system engineering environment.
+* Formed a cohesive Smart Healthcare Platform development team poised to engineer complex healthcare AI architectures through self-directed specialization.
+* Mastered core cloud developer toolchains while adhering to rigorous AWS security and IAM standards.

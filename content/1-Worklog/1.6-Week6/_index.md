@@ -1,57 +1,26 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
+date: 2026-07-06
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Objectives for Week 6:
+* Build the core AI orchestration pipeline utilizing the **LangChain Framework** and Large Language Models.
+* Integrate high-performance LLMs (GPT-4o-mini / Bedrock Claude 3.5 Sonnet) to generate real-time streaming clinical responses.
+* Configure enterprise-grade **LLM Observability** and infrastructure monitoring utilizing **Langfuse** and **AWS CloudWatch**.
 
-### Week 6 Objectives:
+### Tasks Implemented This Week:
+| Day | Task | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| **Mon** | - Develop the core AI orchestration engine within the AI Backend using the **LangChain Framework**.<br>- Construct comprehensive clinical QA Prompts synthesizing 4 data streams: Contextualized Query + Chat History + ViMQ Intent/Entities + Top Reranked Documents. | 06/07/2026 | 06/07/2026 | [RunnableBranch](https://python.langchain.com/v0.1/docs/expression_language/primitives/routing/) |
+| **Tue** | - Integrate LLMs (**GPT-4o-mini / Amazon Bedrock Claude 3.5 Sonnet**) into LangChain generation pipelines.<br>- Configure real-time token streaming channels: streaming generation tokens via gRPC -> FastAPI Gateway (SSE) -> Client UI. | 07/07/2026 | 07/07/2026 | [Medical Prompt Safety](https://www.anthropic.com/news/prompt-engineering-for-medical-ai) |
+| **Wed** | - Deploy **Langfuse (LLM Observability)** across the Smart Healthcare Platform AI microservice ecosystem.<br>- Configure Langfuse Tracing to capture granular execution telemetry: step-by-step latency breakdown, token consumption (input/output), and cost per query. | 08/07/2026 | 08/07/2026 | [Red-Flag Warnings](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326087/) |
+| **Thu** | - Implement infrastructure logging and telemetry utilizing **AWS CloudWatch Logs and Metrics**.<br>- Synchronize structured log streams from FastAPI Gateways, AI Backend microservices, and PostgreSQL databases to CloudWatch. | 09/07/2026 | 10/07/2026 | [Medical Disclaimer](https://en.wikipedia.org/wiki/Medical_disclaimer) |
+| **Fri** | - **Practice:** Conduct rigorous Observability Audits and resilience testing (Error Handling & Fallbacks).<br>- Simulate API timeouts, rate limiting, and database disconnects to verify automated retry logic and LangChain fallbacks. | 10/07/2026 | 12/07/2026 | [GPT-4o-mini API](https://platform.openai.com/docs/models/gpt-4o-mini) |
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 6 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Key Achievements:
+* Fully operationalized the end-to-end AI Backend Microservice combining ViMQ NER, Advanced Reranking RAG (Amazon S3 Vector / Cohere), and LangChain orchestration.
+* Delivered an exceptional clinical UX through ultra-low latency token streaming via gRPC and Server-Sent Events (SSE).
+* Achieved enterprise AI governance standards using Langfuse and AWS CloudWatch observability to monitor performance and control costs.

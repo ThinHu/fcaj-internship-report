@@ -1,59 +1,26 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
+date: 2026-06-15
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 3:
+* Tìm hiểu và nghiên cứu về bài toán trích xuất thực thể y tế tiếng Việt.
+* Xử lý dữ liệu văn bản y tế đầu vào.
+* Tìm hiểu các kiến trúc học sâu cơ bản và xây dựng mô hình AI nhận diện thực thể y tế (ViMQ).
 
-### Mục tiêu tuần 3:
+### Các công việc triển khai trong tuần:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **2** | Phân tích đặc thù văn bản y tế và làm quen với bộ dữ liệu y khoa tiếng Việt. | 15/06/2026 | 15/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **3** | Viết mã tiền xử lý dữ liệu để chuyển đổi văn bản thành các con số cho AI hiểu (Tokenization & Encoding). | 16/06/2026 | 16/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **4** | Chuẩn bị và biến đổi dữ liệu nhãn thành định dạng chuẩn để huấn luyện mô hình. | 17/06/2026 | 17/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **5** | Lên ý tưởng và bắt đầu lắp ghép các thành phần mạng nơ-ron cơ bản cho mô hình ViMQ. | 18/06/2026 | 19/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **6** | Hoàn thiện cấu trúc mô hình để dự đoán được loại bệnh, triệu chứng từ câu văn. | 20/06/2026 | 21/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 3:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+### Kết quả đạt được:
+* Hoàn thành xây dựng pipeline tiền xử lý dữ liệu NER span-based chuyên sâu cho ngôn ngữ tiếng Việt.
+* Lập trình thành công kiến trúc mô hình ViMQ hiện đại, kết hợp sức mạnh của PhoBERT, BiLSTM và Biaffine Classifier.
+* Đặt nền móng vững chắc cho khâu phân tích câu hỏi chuyên môn y tế (Query Analyzer) trong hệ sinh thái Smart Healthcare Platform.

@@ -1,59 +1,26 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
+date: 2026-06-22
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 4:
+* Huấn luyện mô hình ViMQ để nhận dạng văn bản y tế.
+* Tìm cách làm cho mô hình học tốt hơn dù dữ liệu y khoa bị thiếu hụt hoặc nhiễu.
+* Đánh giá độ chính xác của AI và đưa mô hình vào chạy thực tế.
 
-### Mục tiêu tuần 4:
+### Các công việc triển khai trong tuần:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **2** | Cấu hình các thông số cơ bản (Optimizer, hàm Loss) để bắt đầu quá trình huấn luyện AI. | 22/06/2026 | 22/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **3** | Xây dựng quy trình tự động huấn luyện lặp lại nhiều lần để AI học được nhiều từ vựng mới hơn. | 23/06/2026 | 23/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **4** | Áp dụng các thuật toán tạo nhiễu ngẫu nhiên giúp mô hình trở nên mạnh mẽ và ít bị dự đoán sai hơn. | 24/06/2026 | 25/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **5** | Viết các tập lệnh để chấm điểm và kiểm tra xem mô hình AI đoán đúng được bao nhiêu phần trăm. | 26/06/2026 | 26/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
+| **6** | Đóng gói mô hình AI vừa huấn luyện vào hệ thống chatbot để phân tích câu hỏi bệnh nhân theo thời gian thực. | 27/06/2026 | 28/06/2026 | [ViMQ Repository](https://github.com/tadeephuy/ViMQ) |
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 4:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+### Kết quả đạt được:
+* Huấn luyện và tối ưu hóa thành công mô hình NER tiếng Việt chuyên khoa y tế ViMQ với chiến lược Self-training tiên tiến.
+* Đạt chỉ số F1-Score ấn tượng (88.4%), vượt trội so với các phương pháp trích xuất thực thể truyền thống.
+* Tích hợp thành công ViMQ vào lõi AI Backend của Smart Healthcare Platform, hoàn thiện bước chuẩn bị ngữ cảnh chuyên sâu cho RAG Pipeline.

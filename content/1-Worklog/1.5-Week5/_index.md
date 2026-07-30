@@ -1,57 +1,26 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
+date: 2026-06-29
 weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Objectives for Week 5:
+* Architect an Advanced RAG Pipeline leveraging **Amazon S3 Vector** as the primary vector database.
+* Implement conversational query reformulation (**Contextualized Query Rewriting**) backed by PostgreSQL history.
+* Deploy **Cohere Reranker** as an intelligent secondary filter to re-score and refine retrieved clinical documents.
 
-### Week 5 Objectives:
+### Tasks Implemented This Week:
+| Day | Task | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| **Mon** | - Standardize and execute semantic chunking across clinical treatment protocols and medical pharmacopeias.<br>- Generate high-dimensional embeddings (OpenAI Embeddings / Bedrock Titan Embeddings) and ingest them into **Amazon S3 Vector**. | 29/06/2026 | 29/06/2026 | [AWS S3 SDK](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html) |
+| **Tue** | - Engineer **Contextualized Query Rewriting** workflows within LangChain:<br>- Retrieve multi-turn dialogue history from PostgreSQL (NeonDB/RDS) via `session_id` and prompt LLMs to reformulate follow-up queries into standalone contextual prompts. | 30/06/2026 | 30/06/2026 | [AWS Bedrock KB](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) |
+| **Wed** | - Implement Initial Retrieval pipelines: Query Amazon S3 Vector using the contextualized query and clinical entity keywords extracted by ViMQ to retrieve Top K (K=20) candidate documents. | 01/07/2026 | 01/07/2026 | [Bedrock API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html) |
+| **Thu** | - Architect and integrate **Advanced Reranking** utilizing **Cohere Reranker**:<br>- Pass the 20 candidate documents from Amazon S3 Vector through Cohere's Rerank API to re-score semantic relevance against the contextual query and clinical entities. | 02/07/2026 | 03/07/2026 | [BedrockRetriever](https://python.langchain.com/v0.2/docs/integrations/retrievers/bedrock/) |
+| **Fri** | - **Practice:** Conduct comparative benchmark evaluations between baseline RAG (Vector Search only) and Advanced RAG (S3 Vector Search + Cohere Reranker + ViMQ Entities).<br>- Test against 50 complex clinical case and pharmacology consultations. | 03/07/2026 | 05/07/2026 | [Cohere Rerank v3.0](https://docs.cohere.com/docs/rerank-2) |
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 5 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Key Achievements:
+* Successfully built a state-of-the-art Advanced RAG pipeline using Amazon S3 Vector, overcoming traditional vector retrieval limitations in healthcare.
+* Seamlessly unified ViMQ entity extraction, Context Rewriting, and Cohere Reranking to deliver pristine clinical context to LLMs.
+* Ensured the Smart Healthcare Platform clinical assistant consistently cites verifiable, evidence-based medical treatment protocols with minimal S3 storage costs.

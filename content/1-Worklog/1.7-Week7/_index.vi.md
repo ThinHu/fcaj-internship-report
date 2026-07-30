@@ -1,59 +1,26 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
+date: 2026-07-13
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu Tuần 7:
+* Tích hợp sâu và đánh giá giao diện ứng dụng lâm sàng từ **Repo Smart Healthcare Platform** (Web App chính thức) với hệ thống AI Microservices qua luồng SSE/gRPC.
+* Thực hiện kiểm thử chịu tải (Load Testing) cho các Endpoints và kiểm thử độ chính xác truy hồi của Advanced RAG trên lâm sàng.
+* Tối ưu hóa chi phí vận hành Cloud (FinOps) và đóng gói bộ tài liệu hướng dẫn thực hành (**Workshop**).
 
-### Mục tiêu tuần 7:
+### Các công việc triển khai trong tuần:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **2** | - Tích hợp giao diện người dùng chính thức từ **Repo Smart Healthcare Platform** (Web Application hiện đại) với hệ thống AI Backend Microservice qua **FastAPI Gateway**.<br>- Cấu hình luồng Server-Sent Events (SSE) để kết nối hiển thị kết quả chẩn đoán và tư vấn AI. | 13/07/2026 | 13/07/2026 | [HL7/FHIR Basics](https://www.hl7.org/fhir/overview.html) |
+| **3** | - **Đánh giá Giao diện & Trải nghiệm (UI/UX Evaluation trên Repo Smart Healthcare Platform):**<br>&emsp; + Đánh giá độ nhạy và tốc độ hiển thị token streaming real-time trên Dashboard bác sĩ.<br>&emsp; + Kiểm tra trải nghiệm người dùng khi xem các nguồn trích dẫn y khoa RAG (Citations) và các chỉ định thuốc đề xuất. | 14/07/2026 | 14/07/2026 | [Bi-directional Streaming](https://grpc.io/docs/what-is-grpc/core-concepts/#bidirectional-streaming-rpc) |
+| **4** | - Thực hiện kiểm thử chịu tải (**Load Testing**) bằng Locust/Artillery cho luồng gRPC và SSE Gateway.<br>- Kiểm thử độ chính xác lâm sàng (Clinical RAG Benchmark) trên 50 ca bệnh án thử nghiệm. | 15/07/2026 | 15/07/2026 | [Protobuf V3](https://protobuf.dev/programming-guides/proto3/) |
+| **5** | - Tối ưu hóa chi phí vận hành Cloud (**FinOps**):<br>&emsp; + Rà soát chi phí gọi API (OpenAI Embeddings, Cohere Reranker, Langfuse) và tài nguyên AWS.<br>&emsp; + Tối ưu hóa kích thước vector index trên **Amazon S3 Vector** và áp dụng cache cho các câu hỏi trùng lặp. | 16/07/2026 | 17/07/2026 | [async psycopg3](https://www.psycopg.org/psycopg3/docs/advanced/async.html) |
+| **6** | - **Thực hành:** Đóng gói bộ tài liệu hướng dẫn thực hành (**Workshop** - Step-by-Step Guide).<br>- Viết chi tiết các Module hướng dẫn cộng đồng tự tái tạo giải pháp: Setup ViMQ NER, cấu hình gRPC Microservices, Amazon S3 Vector & Cohere Reranker, tích hợp giao diện Smart Healthcare Platform. | 17/07/2026 | 19/07/2026 | [FastAPI AsyncIO](https://fastapi.tiangolo.com/async/) |
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 7:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+### Kết quả đạt được:
+* Hợp nhất thành công toàn bộ phân hệ UI (Smart Healthcare Platform Repo) và phân hệ AI Backend Microservice (ViMQ + Advanced RAG với Amazon S3 Vector).
+* Đảm bảo hệ thống đạt chuẩn mực cao về hiệu năng chịu tải, độ chính xác y tế và chi phí tối ưu (FinOps).
+* Đóng gói hoàn chỉnh bộ tài liệu Workshop thực hành sẵn sàng cho kỳ đánh giá cuối khóa của chương trình FCAJ.

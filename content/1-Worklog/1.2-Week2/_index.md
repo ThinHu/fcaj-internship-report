@@ -1,57 +1,26 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 2026-06-08
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Objectives for Week 2:
+* Analyze the Microservices architecture and clinical query pipeline of **Smart Healthcare Platform** (on the `chatbot` branch).
+* Implement high-speed inter-service communication utilizing **FastAPI Gateway (SSE)** and **gRPC Streaming**.
+* Configure long-term conversational memory management using PostgreSQL (NeonDB/RDS) and LangChain.
 
-### Week 2 Objectives:
+### Tasks Implemented This Week:
+| Day | Task | Start Date | Completion Date | Reference Materials |
+| --- | --- | --- | --- | --- |
+| **Mon** | - Deep dive into the Smart Healthcare Platform repository structure (focusing on the `chatbot` branch).<br>- Analyze the end-to-end data pipeline: UI -> Gateway -> AI Backend -> RAG & LLM Generation. | 08/06/2026 | 08/06/2026 | [Microservices Architecture](https://aws.amazon.com/microservices/) |
+| **Tue** | - Study Server-Sent Events (SSE) protocols for real-time token streaming to clients.<br>- Develop the **FastAPI Gateway** acting as an API reverse proxy managing HTTP requests and `session_id` routing. | 09/06/2026 | 09/06/2026 | [FastAPI SSE](https://fastapi.tiangolo.com/advanced/websockets/) |
+| **Wed** | - Architect and implement **gRPC Streaming** channels connecting the FastAPI Gateway to the AI Backend microservice.<br>- Author `.proto` schema definitions for high-speed internal RPC service communication. | 10/06/2026 | 11/06/2026 | [gRPC Python](https://grpc.io/docs/languages/python/) |
+| **Thu** | - Provision **PostgreSQL (NeonDB Serverless / Amazon RDS)** for persistent chat history storage.<br>- Integrate LangChain's `PostgresChatMessageHistory` to maintain reliable conversational memory keyed by `session_id`. | 12/06/2026 | 12/06/2026 | [NeonDB Serverless](https://neon.tech/docs/introduction) |
+| **Fri** | - **Practice:** Engineer the **Contextualized Query Rewriting** module within the AI Backend.<br>- Leverage LLMs (GPT-4o-mini / Bedrock Claude) combined with PostgreSQL chat history to autonomously rewrite ambiguous follow-up queries into standalone, clinically enriched prompts. | 13/06/2026 | 14/06/2026 | [LangChain Memory](https://python.langchain.com/v0.1/docs/modules/memory/) |
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Week 2 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Key Achievements:
+* Successfully engineered the high-performance Microservices communication backbone for Smart Healthcare Platform.
+* Mastered gRPC Streaming and SSE protocols, ensuring instantaneous real-time AI token streaming.
+* Implemented robust conversational memory persistence and automated contextual query reformulation.

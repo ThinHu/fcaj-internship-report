@@ -1,59 +1,25 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
+date: 2026-07-20
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Tuần 8:
+* Tổng kết toàn bộ kiến thức AI Engineer chuyên sâu đã tự định hướng áp dụng (ViMQ NER, gRPC, Advanced Reranking RAG, Langfuse Tracing) và hoàn thành bài Tự đánh giá (Self-evaluation).
+* Rà soát, chuẩn hóa bố cục, lỗi chính tả và đường dẫn trên trang web Báo cáo thực tập (Internship Report).
+* **Hoàn tất kiểm tra cuối cùng và nộp thành công Báo cáo thực tập cùng tài liệu Workshop lên hệ thống FCAJ trước ngày 31/07/2026.**
 
+### Các công việc triển khai trong tuần:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| **2** | - Tổng hợp bài học kinh nghiệm về kỹ thuật AI Engineer thực tế trong dự án Smart Healthcare Platform, hoàn thành trang [Tự đánh giá (Self-evaluation)](/6-self-evaluation/).<br>- Cập nhật danh sách các bài viết chuyên môn đã chia sẻ vào mục [3-BlogsPosted](/3-blogsposted/). | 20/07/2026 | 21/07/2026 | [Locust Load Testing](https://locust.io/) |
+| **3** | - Kiểm tra toàn diện trang web Báo cáo trên máy cục bộ (`hugo server`).<br>- Rà soát kỹ lưỡng lỗi chính tả, kiểm tra các đường dẫn (broken links) và đảm bảo hiển thị sắc nét các sơ đồ kiến trúc Microservices & RAG. | 22/07/2026 | 23/07/2026 | [Langfuse Tracing](https://langfuse.com/docs/tracing) |
+| **4** | - Đóng gói hoàn chỉnh Repository GitHub của dự án **Smart Healthcare Platform** (bao gồm branch `chatbot` cho AI Backend và Smart Healthcare Platform Repo cho UI) cùng bộ tài liệu **Workshop**.<br>- Viết `README.md` chuyên nghiệp với hướng dẫn cài đặt Docker, gRPC service và biến môi trường đầy đủ. | 24/07/2026 | 25/07/2026 | [AWS CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) |
+| **5** | - Thực hiện buổi báo cáo review tổng kết nội bộ (Dry-run) cùng Mentor FCAJ và các thành viên nhóm Smart Healthcare Platform.<br>- Tiếp thu các ý kiến đóng góp cuối cùng để tinh chỉnh từng chi tiết nhỏ trước thời điểm nộp bài chính thức. | 27/07/2026 | 28/07/2026 | [Watchtower Python](https://github.com/kislyuk/watchtower) |
+| **6** | - **Thực hành:** Thực hiện quy trình nộp bài chính thức trên Cổng thông tin (Portal) của chương trình FCAJ.<br>- **Nộp thành công toàn bộ Internship Report, Link GitHub Repository và tài liệu Workshop lên hệ thống FCAJ trước hạn chót 31/07/2026.** | 29/07/2026 | 31/07/2026 | [FCAJ AI Event](https://fcaj-event.aws.dev/) |
 
-### Mục tiêu tuần 8:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
-### Kết quả đạt được tuần 8:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+### Kết quả đạt được:
+* Hoàn thành trọn vẹn và xuất sắc lộ trình 8 tuần thực tập với định hướng chuyên môn **AI Engineer** tự chọn trong chương trình FCAJ.
+* Xây dựng và bàn giao thành công nền tảng **Smart Healthcare Platform** — Giải pháp trợ lý AI lâm sàng hiện đại với kiến trúc gRPC Microservices, ViMQ NER & Advanced Reranking RAG (Amazon S3 Vector).
+* **Nộp thành công toàn bộ Báo cáo thực tập và gói hướng dẫn thực hành Workshop lên hệ thống FCAJ đúng kỳ hạn 31/07/2026.**

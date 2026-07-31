@@ -1,0 +1,94 @@
+\vspace{0.5em}\noindent\textbf{Mục tiêu Tuần 7:}
+
+\begin{itemize}
+\tightlist
+\item
+  Tích hợp sâu và đánh giá giao diện ứng dụng lâm sàng từ \textbf{Repo
+  Smart Healthcare Platform} (Web App chính thức) với hệ thống AI
+  Microservices qua luồng SSE/gRPC.
+\item
+  Thực hiện kiểm thử chịu tải (Load Testing) cho các Endpoints và kiểm
+  thử độ chính xác truy hồi của Advanced RAG trên lâm sàng.
+\item
+  Tối ưu hóa chi phí vận hành Cloud (FinOps) và đóng gói bộ tài liệu
+  hướng dẫn thực hành (\textbf{Workshop}).
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Các công việc triển khai trong tuần:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Thứ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Công việc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày bắt đầu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày hoàn thành
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nguồn tài liệu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{2} & - Tích hợp giao diện người dùng chính thức từ \textbf{Repo
+Smart Healthcare Platform} (Web Application hiện đại) với hệ thống AI
+Backend Microservice qua \textbf{FastAPI Gateway}.- Cấu hình luồng
+Server-Sent Events (SSE) để kết nối hiển thị kết quả chẩn đoán và tư vấn
+AI. & 13/07/2026 & 13/07/2026 &
+\href{https://www.hl7.org/fhir/overview.html}{HL7/FHIR Basics} \\
+\textbf{3} & - \textbf{Đánh giá Giao diện \& Trải nghiệm (UI/UX
+Evaluation trên Repo Smart Healthcare Platform):}\qquad  + Đánh giá độ
+nhạy và tốc độ hiển thị token streaming real-time trên Dashboard bác
+sĩ.\qquad  + Kiểm tra trải nghiệm người dùng khi xem các nguồn trích dẫn
+y khoa RAG (Citations) và các chỉ định thuốc đề xuất. & 14/07/2026 &
+14/07/2026 &
+\href{https://grpc.io/docs/what-is-grpc/core-concepts/\#bidirectional-streaming-rpc}{Bi-directional
+Streaming} \\
+\textbf{4} & - Thực hiện kiểm thử chịu tải (\textbf{Load Testing}) bằng
+Locust/Artillery cho luồng gRPC và SSE Gateway.- Kiểm thử độ chính xác
+lâm sàng (Clinical RAG Benchmark) trên 50 ca bệnh án thử nghiệm. &
+15/07/2026 & 15/07/2026 &
+\href{https://protobuf.dev/programming-guides/proto3/}{Protobuf V3} \\
+\textbf{5} & - Tối ưu hóa chi phí vận hành Cloud
+(\textbf{FinOps}):\qquad  + Rà soát chi phí gọi API (OpenAI Embeddings,
+Cohere Reranker, Langfuse) và tài nguyên AWS.\qquad  + Tối ưu hóa kích
+thước vector index trên \textbf{Amazon S3 Vector} và áp dụng cache cho
+các câu hỏi trùng lặp. & 16/07/2026 & 17/07/2026 &
+\href{https://www.psycopg.org/psycopg3/docs/advanced/async.html}{async
+psycopg3} \\
+\textbf{6} & - \textbf{Thực hành:} Đóng gói bộ tài liệu hướng dẫn thực
+hành (\textbf{Workshop} - Step-by-Step Guide).- Viết chi tiết các Module
+hướng dẫn cộng đồng tự tái tạo giải pháp: Setup ViMQ NER, cấu hình gRPC
+Microservices, Amazon S3 Vector \& Cohere Reranker, tích hợp giao diện
+Smart Healthcare Platform. & 17/07/2026 & 19/07/2026 &
+\href{https://fastapi.tiangolo.com/async/}{FastAPI AsyncIO} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Kết quả đạt được:}
+
+\begin{itemize}
+\tightlist
+\item
+  Hợp nhất thành công toàn bộ phân hệ UI (Smart Healthcare Platform
+  Repo) và phân hệ AI Backend Microservice (ViMQ + Advanced RAG với
+  Amazon S3 Vector).
+\item
+  Đảm bảo hệ thống đạt chuẩn mực cao về hiệu năng chịu tải, độ chính xác
+  y tế và chi phí tối ưu (FinOps).
+\item
+  Đóng gói hoàn chỉnh bộ tài liệu Workshop thực hành sẵn sàng cho kỳ
+  đánh giá cuối khóa của chương trình FCAJ.
+\end{itemize}

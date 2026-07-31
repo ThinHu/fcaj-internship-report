@@ -1,0 +1,94 @@
+\vspace{0.5em}\noindent\textbf{Objectives for Week 5:}
+
+\begin{itemize}
+\tightlist
+\item
+  Architect an Advanced RAG Pipeline leveraging \textbf{Amazon S3
+  Vector} as the primary vector database.
+\item
+  Implement conversational query reformulation (\textbf{Contextualized
+  Query Rewriting}) backed by PostgreSQL history.
+\item
+  Deploy \textbf{Cohere Reranker} as an intelligent secondary filter to
+  re-score and refine retrieved clinical documents.
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Tasks Implemented This Week:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Start Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Completion Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reference Materials
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Mon} & - Standardize and execute semantic chunking across
+clinical treatment protocols and medical pharmacopeias.- Generate
+high-dimensional embeddings (OpenAI Embeddings / Bedrock Titan
+Embeddings) and ingest them into \textbf{Amazon S3 Vector}. & 29/06/2026
+& 29/06/2026 &
+\href{https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html}{AWS
+S3 SDK} \\
+\textbf{Tue} & - Engineer \textbf{Contextualized Query Rewriting}
+workflows within LangChain:- Retrieve multi-turn dialogue history from
+PostgreSQL (NeonDB/RDS) via \texttt{session\_id} and prompt LLMs to
+reformulate follow-up queries into standalone contextual prompts. &
+30/06/2026 & 30/06/2026 &
+\href{https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html}{AWS
+Bedrock KB} \\
+\textbf{Wed} & - Implement Initial Retrieval pipelines: Query Amazon S3
+Vector using the contextualized query and clinical entity keywords
+extracted by ViMQ to retrieve Top K (K=20) candidate documents. &
+01/07/2026 & 01/07/2026 &
+\href{https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html}{Bedrock
+API} \\
+\textbf{Thu} & - Architect and integrate \textbf{Advanced Reranking}
+utilizing \textbf{Cohere Reranker}:- Pass the 20 candidate documents
+from Amazon S3 Vector through Cohere's Rerank API to re-score semantic
+relevance against the contextual query and clinical entities. &
+02/07/2026 & 03/07/2026 &
+\href{https://python.langchain.com/v0.2/docs/integrations/retrievers/bedrock/}{BedrockRetriever} \\
+\textbf{Fri} & - \textbf{Practice:} Conduct comparative benchmark
+evaluations between baseline RAG (Vector Search only) and Advanced RAG
+(S3 Vector Search + Cohere Reranker + ViMQ Entities).- Test against 50
+complex clinical case and pharmacology consultations. & 03/07/2026 &
+05/07/2026 & \href{https://docs.cohere.com/docs/rerank-2}{Cohere Rerank
+v3.0} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Key Achievements:}
+
+\begin{itemize}
+\tightlist
+\item
+  Successfully built a state-of-the-art Advanced RAG pipeline using
+  Amazon S3 Vector, overcoming traditional vector retrieval limitations
+  in healthcare.
+\item
+  Seamlessly unified ViMQ entity extraction, Context Rewriting, and
+  Cohere Reranking to deliver pristine clinical context to LLMs.
+\item
+  Ensured the Smart Healthcare Platform clinical assistant consistently
+  cites verifiable, evidence-based medical treatment protocols with
+  minimal S3 storage costs.
+\end{itemize}

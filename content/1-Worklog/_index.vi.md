@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Trong phần này, mình sẽ tổng hợp lại nhật ký công việc (Worklog) trong suốt 8 tuần thực tập tại AWS (Chương trình First Cloud AI Journey 2026). 
+Trong phần này, tôi sẽ tổng hợp lại nhật ký công việc (Worklog) trong suốt 8 tuần thực tập tại AWS (Chương trình First Cloud AI Journey 2026). 
 
-Dự án trọng tâm của mình là xây dựng **Nền tảng Y tế số (Smart Healthcare Platform)** với các tính năng: Đặt lịch hẹn, phân quyền người dùng, và tích hợp trợ lý AI y khoa. Dưới đây là lộ trình chi tiết từng tuần:
+Dự án trọng tâm của tôi là xây dựng **Nền tảng Y tế số (Smart Healthcare Platform)** với các tính năng: Đặt lịch hẹn, phân quyền người dùng, và tích hợp trợ lý AI y khoa. Dưới đây là lộ trình chi tiết từng tuần:
 
 **Tuần 1:** [Khởi động dự án và Tìm hiểu các dịch vụ AWS cơ bản](1.1-week1/)
 

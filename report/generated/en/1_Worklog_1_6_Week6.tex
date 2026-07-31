@@ -1,0 +1,94 @@
+\vspace{0.5em}\noindent\textbf{Objectives for Week 6:}
+
+\begin{itemize}
+\tightlist
+\item
+  Build the core AI orchestration pipeline utilizing the
+  \textbf{LangChain Framework} and Large Language Models.
+\item
+  Integrate high-performance LLMs (GPT-4o-mini / Bedrock Claude 3.5
+  Sonnet) to generate real-time streaming clinical responses.
+\item
+  Configure enterprise-grade \textbf{LLM Observability} and
+  infrastructure monitoring utilizing \textbf{Langfuse} and \textbf{AWS
+  CloudWatch}.
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Tasks Implemented This Week:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Start Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Completion Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reference Materials
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Mon} & - Develop the core AI orchestration engine within the AI
+Backend using the \textbf{LangChain Framework}.- Construct comprehensive
+clinical QA Prompts synthesizing 4 data streams: Contextualized Query +
+Chat History + ViMQ Intent/Entities + Top Reranked Documents. &
+06/07/2026 & 06/07/2026 &
+\href{https://python.langchain.com/v0.1/docs/expression_language/primitives/routing/}{RunnableBranch} \\
+\textbf{Tue} & - Integrate LLMs (\textbf{GPT-4o-mini / Amazon Bedrock
+Claude 3.5 Sonnet}) into LangChain generation pipelines.- Configure
+real-time token streaming channels: streaming generation tokens via gRPC
+-\textgreater{} FastAPI Gateway (SSE) -\textgreater{} Client UI. &
+07/07/2026 & 07/07/2026 &
+\href{https://www.anthropic.com/news/prompt-engineering-for-medical-ai}{Medical
+Prompt Safety} \\
+\textbf{Wed} & - Deploy \textbf{Langfuse (LLM Observability)} across the
+Smart Healthcare Platform AI microservice ecosystem.- Configure Langfuse
+Tracing to capture granular execution telemetry: step-by-step latency
+breakdown, token consumption (input/output), and cost per query. &
+08/07/2026 & 08/07/2026 &
+\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7326087/}{Red-Flag
+Warnings} \\
+\textbf{Thu} & - Implement infrastructure logging and telemetry
+utilizing \textbf{AWS CloudWatch Logs and Metrics}.- Synchronize
+structured log streams from FastAPI Gateways, AI Backend microservices,
+and PostgreSQL databases to CloudWatch. & 09/07/2026 & 10/07/2026 &
+\href{https://en.wikipedia.org/wiki/Medical_disclaimer}{Medical
+Disclaimer} \\
+\textbf{Fri} & - \textbf{Practice:} Conduct rigorous Observability
+Audits and resilience testing (Error Handling \& Fallbacks).- Simulate
+API timeouts, rate limiting, and database disconnects to verify
+automated retry logic and LangChain fallbacks. & 10/07/2026 & 12/07/2026
+& \href{https://platform.openai.com/docs/models/gpt-4o-mini}{GPT-4o-mini
+API} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Key Achievements:}
+
+\begin{itemize}
+\tightlist
+\item
+  Fully operationalized the end-to-end AI Backend Microservice combining
+  ViMQ NER, Advanced Reranking RAG (Amazon S3 Vector / Cohere), and
+  LangChain orchestration.
+\item
+  Delivered an exceptional clinical UX through ultra-low latency token
+  streaming via gRPC and Server-Sent Events (SSE).
+\item
+  Achieved enterprise AI governance standards using Langfuse and AWS
+  CloudWatch observability to monitor performance and control costs.
+\end{itemize}

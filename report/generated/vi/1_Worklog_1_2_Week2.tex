@@ -1,0 +1,89 @@
+\vspace{0.5em}\noindent\textbf{Mục tiêu Tuần 2:}
+
+\begin{itemize}
+\tightlist
+\item
+  Phân tích kiến trúc Microservices và Pipeline xử lý câu hỏi y tế của
+  dự án \textbf{Smart Healthcare Platform} (trên branch
+  \texttt{chatbot}).
+\item
+  Nghiên cứu cơ chế giao tiếp tốc độ cao giữa các dịch vụ bằng
+  \textbf{FastAPI Gateway (SSE)} và \textbf{gRPC Stream}.
+\item
+  Thiết lập hệ thống quản lý bộ nhớ hội thoại dài hạn với PostgreSQL
+  (NeonDB/RDS) và LangChain.
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Các công việc triển khai trong tuần:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Thứ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Công việc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày bắt đầu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày hoàn thành
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nguồn tài liệu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{2} & - Khám phá và phân tích sâu cấu trúc Repository của Smart
+Healthcare Platform (branch \texttt{chatbot}).- Nghiên cứu luồng dữ liệu
+(Data Pipeline): từ Giao diện UI -\textgreater{} Gateway -\textgreater{}
+AI Backend -\textgreater{} RAG \& LLM Generation. & 08/06/2026 &
+08/06/2026 & \href{https://aws.amazon.com/microservices/}{Microservices
+Architecture} \\
+\textbf{3} & - Nghiên cứu giao thức Server-Sent Events (SSE) để truyền
+phát (streaming) câu trả lời real-time về Client.- Lập trình
+\textbf{FastAPI Gateway} đóng vai trò Proxy tiếp nhận request HTTP và
+quản lý \texttt{session\_id}. & 09/06/2026 & 09/06/2026 &
+\href{https://fastapi.tiangolo.com/advanced/websockets/}{FastAPI SSE} \\
+\textbf{4} & - Nghiên cứu và cấu hình giao thức \textbf{gRPC Streaming}
+kết nối giữa FastAPI Gateway và phân hệ AI Backend.- Viết file định
+nghĩa \texttt{.proto} cho các service giao tiếp nội bộ tốc độ cao. &
+10/06/2026 & 11/06/2026 &
+\href{https://grpc.io/docs/languages/python/}{gRPC Python} \\
+\textbf{5} & - Thiết lập cơ sở dữ liệu \textbf{PostgreSQL (NeonDB
+Serverless / Amazon RDS)} lưu trữ lịch sử trò chuyện.- Tích hợp
+\texttt{PostgresChatMessageHistory} của LangChain để duy trì bộ nhớ hội
+thoại theo \texttt{session\_id}. & 12/06/2026 & 12/06/2026 &
+\href{https://neon.tech/docs/introduction}{NeonDB Serverless} \\
+\textbf{6} & - \textbf{Thực hành:} Viết module \textbf{Contextualized
+Query Rewriting} trong AI Backend.- Sử dụng LLM (GPT-4o-mini / Bedrock
+Claude) kết hợp lịch sử chat từ PostgreSQL để tự động tái cấu trúc câu
+hỏi gốc thành một câu hỏi độc lập mang đầy đủ ngữ cảnh y khoa. &
+13/06/2026 & 14/06/2026 &
+\href{https://python.langchain.com/v0.1/docs/modules/memory/}{LangChain
+Memory} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Kết quả đạt được:}
+
+\begin{itemize}
+\tightlist
+\item
+  Định hình thành công nền tảng kiến trúc Microservices hiệu năng cao
+  cho Smart Healthcare Platform.
+\item
+  Làm chủ công nghệ giao tiếp gRPC Streaming và SSE, đảm bảo trải nghiệm
+  AI phản hồi tức thì (real-time streaming).
+\item
+  Xây dựng hoàn chỉnh luồng quản lý bộ nhớ hội thoại thông minh và tái
+  cấu trúc câu hỏi tự động (Contextualized Query).
+\end{itemize}

@@ -1,0 +1,90 @@
+\vspace{0.5em}\noindent\textbf{Mục tiêu Tuần 5:}
+
+\begin{itemize}
+\tightlist
+\item
+  Xây dựng luồng Advanced RAG Pipeline kết hợp cơ sở dữ liệu vector
+  \textbf{Amazon S3 Vector}.
+\item
+  Tích hợp kỹ thuật tái cấu trúc câu hỏi hội thoại
+  (\textbf{Contextualized Query Rewriting}) từ lịch sử PostgreSQL.
+\item
+  Triển khai mô hình \textbf{Cohere Reranker} đóng vai trò màng lọc thứ
+  cấp, chấm điểm lại và tinh lọc tài liệu y khoa.
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Các công việc triển khai trong tuần:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Thứ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Công việc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày bắt đầu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ngày hoàn thành
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nguồn tài liệu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{2} & - Chuẩn hóa và cắt đoạn (chunking) tập dữ liệu phác đồ điều
+trị, dược điển y khoa.- Chuyển đổi tài liệu thành vector embeddings
+(OpenAI Embeddings / Bedrock Titan Embeddings) và tải lên cơ sở dữ liệu
+vector \textbf{Amazon S3 Vector}. & 29/06/2026 & 29/06/2026 &
+\href{https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html}{AWS
+S3 SDK} \\
+\textbf{3} & - Lập trình luồng \textbf{Contextualized Query Rewriting}
+trong LangChain:- Kết hợp \texttt{session\_id} để lấy lịch sử trò chuyện
+từ PostgreSQL (NeonDB/RDS), dùng LLM cấu trúc lại câu hỏi nối tiếp thành
+câu hỏi độc lập ngữ cảnh. & 30/06/2026 & 30/06/2026 &
+\href{https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html}{AWS
+Bedrock KB} \\
+\textbf{4} & - Lập trình luồng tìm kiếm ban đầu (Initial Retrieval): Sử
+dụng câu hỏi đã tái cấu trúc và từ khóa thực thể (Entities) từ mô hình
+ViMQ gửi vào Amazon S3 Vector để lấy Top K (K=20) tài liệu thô liên quan
+nhất. & 01/07/2026 & 01/07/2026 &
+\href{https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html}{Bedrock
+API} \\
+\textbf{5} & - Nghiên cứu và triển khai kỹ thuật \textbf{Advanced
+Reranking} với \textbf{Cohere Reranker}:- Đẩy 20 tài liệu thô từ Amazon
+S3 Vector qua Cohere Rerank API để chấm điểm lại sự tương quan ngữ nghĩa
+chuyên sâu với câu hỏi và thực thể y tế. & 02/07/2026 & 03/07/2026 &
+\href{https://python.langchain.com/v0.2/docs/integrations/retrievers/bedrock/}{BedrockRetriever} \\
+\textbf{6} & - \textbf{Thực hành:} Kiểm thử so sánh hiệu năng giữa RAG
+truyền thống (chỉ dùng Vector Search) và Advanced RAG (Vector Search
+trên S3 + Cohere Reranker + ViMQ Entities).- Đánh giá trên tập 50 câu
+hỏi tư vấn thuốc và phác đồ điều trị phức tạp. & 03/07/2026 & 05/07/2026
+& \href{https://docs.cohere.com/docs/rerank-2}{Cohere Rerank v3.0} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Kết quả đạt được:}
+
+\begin{itemize}
+\tightlist
+\item
+  Xây dựng thành công luồng Advanced RAG hiện đại sử dụng Amazon S3
+  Vector, giải quyết triệt để điểm yếu của RAG truyền thống trong y tế.
+\item
+  Sự kết hợp giữa thực thể ViMQ NER, Context Rewriting và Cohere
+  Reranker tạo ra nguồn tri thức đầu vào cực kỳ sạch và chính xác cho
+  LLM.
+\item
+  Đảm bảo hệ thống trợ lý y tế Smart Healthcare Platform luôn dẫn nguồn
+  phác đồ điều trị chính xác, chuẩn khoa học với chi phí lưu trữ S3 cực
+  kỳ tiết kiệm.
+\end{itemize}

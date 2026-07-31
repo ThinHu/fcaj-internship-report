@@ -1,0 +1,45 @@
+\vspace{0.5em}\noindent\textbf{AWS COGNITO LÀ GÌ? TẠI SAO ĐÂY LÀ ``MẢNH GHÉP'' KHÔNG THỂ THIẾU
+CHO HỆ THỐNG Y TẾ SỐ?}
+
+Trong quá trình phát triển dự án Smart Healthcare Platform (Nền tảng hỗ
+trợ sàng lọc y khoa AI và quản lý lịch hẹn), việc quản lý định danh và
+phân quyền đa vai trò (Authentication \& Authorization) là một thách
+thức lớn. Hệ thống phục vụ 3 nhóm người dùng hoàn toàn riêng biệt: Bệnh
+nhân, Bác sĩ và Lễ tân. Thay vì tự phát triển một dịch vụ Auth thủ công
+phức tạp, giải pháp tối ưu được lựa chọn là tích hợp AWS Cognito.
+
+Các điểm chính cần nắm:
+
+\begin{itemize}
+\tightlist
+\item
+  AWS Cognito là dịch vụ quản lý định danh toàn diện (Fully Managed
+  Identity \& Access Management), hỗ trợ cả User Pools (quản lý thư mục
+  người dùng) và Identity Pools (phân quyền truy cập tài nguyên AWS).
+\item
+  Giải quyết triệt để bài toán phân quyền đa vai trò (RBAC - Role-Based
+  Access Control) thông qua thuộc tính \texttt{cognito:groups} đính kèm
+  trực tiếp trong JWT Tokens.
+\item
+  Hỗ trợ quy trình On-boarding an toàn cho nhân viên y tế: Admin khởi
+  tạo tài khoản qua API, Cognito tự động gửi Email kèm mật khẩu tạm thời
+  và bắt buộc đổi mật khẩu ở lần đăng nhập đầu tiên.
+\item
+  Backend Service (NestJS) xác thực Token nhẹ nhàng bằng Public Key của
+  Cognito mà không cần lưu trữ bất kỳ mật khẩu nào của người dùng trong
+  cơ sở dữ liệu.
+\item
+  Tích hợp chiến lược mã hóa UUID giúp ẩn danh định danh người dùng gốc,
+  đáp ứng các tiêu chuẩn bảo mật dữ liệu y tế nhạy cảm.
+\item
+  Tối ưu chi phí phát triển và vận hành nhờ hạn mức AWS Free Tier cực
+  rộng lên tới 50,000 MAU (Monthly Active Users) mỗi tháng.
+\end{itemize}
+
+Bài viết này giúp bạn hiểu rõ lý do tại sao nên nhường gánh nặng bảo mật
+và hạ tầng Auth cho các dịch vụ Cloud-native như AWS Cognito để dồn
+100\% nguồn lực vào việc tối ưu hóa logic nghiệp vụ cốt lõi của dự án.
+
+Xem chi tiết
+\href{https://www.facebook.com/groups/awsstudygroupfcj/permalink/2228021697962790/?rdid=MLFJXbxXfs8sMMKH\#}{Tại
+đây}

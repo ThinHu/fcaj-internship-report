@@ -1,0 +1,88 @@
+\vspace{0.5em}\noindent\textbf{Objectives for Week 2:}
+
+\begin{itemize}
+\tightlist
+\item
+  Analyze the Microservices architecture and clinical query pipeline of
+  \textbf{Smart Healthcare Platform} (on the \texttt{chatbot} branch).
+\item
+  Implement high-speed inter-service communication utilizing
+  \textbf{FastAPI Gateway (SSE)} and \textbf{gRPC Streaming}.
+\item
+  Configure long-term conversational memory management using PostgreSQL
+  (NeonDB/RDS) and LangChain.
+\end{itemize}
+
+\vspace{0.5em}\noindent\textbf{Tasks Implemented This Week:}
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Day
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Start Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Completion Date
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reference Materials
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Mon} & - Deep dive into the Smart Healthcare Platform repository
+structure (focusing on the \texttt{chatbot} branch).- Analyze the
+end-to-end data pipeline: UI -\textgreater{} Gateway -\textgreater{} AI
+Backend -\textgreater{} RAG \& LLM Generation. & 08/06/2026 & 08/06/2026
+& \href{https://aws.amazon.com/microservices/}{Microservices
+Architecture} \\
+\textbf{Tue} & - Study Server-Sent Events (SSE) protocols for real-time
+token streaming to clients.- Develop the \textbf{FastAPI Gateway} acting
+as an API reverse proxy managing HTTP requests and \texttt{session\_id}
+routing. & 09/06/2026 & 09/06/2026 &
+\href{https://fastapi.tiangolo.com/advanced/websockets/}{FastAPI SSE} \\
+\textbf{Wed} & - Architect and implement \textbf{gRPC Streaming}
+channels connecting the FastAPI Gateway to the AI Backend microservice.-
+Author \texttt{.proto} schema definitions for high-speed internal RPC
+service communication. & 10/06/2026 & 11/06/2026 &
+\href{https://grpc.io/docs/languages/python/}{gRPC Python} \\
+\textbf{Thu} & - Provision \textbf{PostgreSQL (NeonDB Serverless /
+Amazon RDS)} for persistent chat history storage.- Integrate LangChain's
+\texttt{PostgresChatMessageHistory} to maintain reliable conversational
+memory keyed by \texttt{session\_id}. & 12/06/2026 & 12/06/2026 &
+\href{https://neon.tech/docs/introduction}{NeonDB Serverless} \\
+\textbf{Fri} & - \textbf{Practice:} Engineer the \textbf{Contextualized
+Query Rewriting} module within the AI Backend.- Leverage LLMs
+(GPT-4o-mini / Bedrock Claude) combined with PostgreSQL chat history to
+autonomously rewrite ambiguous follow-up queries into standalone,
+clinically enriched prompts. & 13/06/2026 & 14/06/2026 &
+\href{https://python.langchain.com/v0.1/docs/modules/memory/}{LangChain
+Memory} \\
+\end{longtable}
+\endgroup
+
+\vspace{0.5em}\noindent\textbf{Key Achievements:}
+
+\begin{itemize}
+\tightlist
+\item
+  Successfully engineered the high-performance Microservices
+  communication backbone for Smart Healthcare Platform.
+\item
+  Mastered gRPC Streaming and SSE protocols, ensuring instantaneous
+  real-time AI token streaming.
+\item
+  Implemented robust conversational memory persistence and automated
+  contextual query reformulation.
+\end{itemize}

@@ -80,9 +80,7 @@ jobs:
       - name: Compile Vietnamese PDF
         working-directory: report
         run: |
-          latexmk -pdf -interaction=nonstopmode main.tex
-          latexmk -pdf -interaction=nonstopmode main.tex
-          latexmk -pdf -interaction=nonstopmode main.tex
+          latexmk -pdf -interaction=nonstopmode main.tex || { cat main.log; exit 1; }
           cp main.pdf ../report_vn.pdf
 
       - name: Compile English PDF

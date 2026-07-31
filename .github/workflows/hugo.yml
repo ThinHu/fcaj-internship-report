@@ -80,7 +80,17 @@ jobs:
       - name: Compile Vietnamese PDF
         working-directory: report
         run: |
-          latexmk -pdf -interaction=nonstopmode main.tex || { cat main.log; exit 1; }
+          latexmk -pdf -interaction=nonstopmode main.tex || { 
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git checkout -b debug-log
+            cp main.log ../main.log
+            cd ..
+            git add main.log
+            git commit -m "chore: upload main.log for debugging"
+            git push -f origin debug-log
+            exit 1
+          }
           cp main.pdf ../report_vn.pdf
 
       - name: Compile English PDF

@@ -593,55 +593,8 @@ def preprocess_markdown(content, meta=None):
 # ---------------------------------------------------------------------------
 def neutralize_body_headings(latex):
     """Convert Pandoc headings to visual bold headings."""
-
-    heading_cmds = ["section", "subsection", "subsubsection", "paragraph", "subparagraph"]
-
-    # 1. Bỏ toàn bộ \hypertarget wrapper nhưng giữ nội dung bên trong.
-    # Pandoc thường sinh:
-    # \hypertarget{id}{%
-    # \section{Title}\label{id}}
-    latex = re.sub(
-        r"\\hypertarget\{[^{}]*\}\{\s*%?\s*",
-        "",
-        latex,
-        flags=re.DOTALL,
-    )
-
-    # Sau khi bỏ phần mở \hypertarget, thường sẽ dư "}" sau \label hoặc sau heading.
-    latex = re.sub(
-        r"(\\label\{[^{}]*\})\s*\}",
-        r"\1",
-        latex,
-        flags=re.DOTALL,
-    )
-
-    # 2. Remove labels.
-    latex = re.sub(r"\\label\{[^{}]*\}", "", latex)
-
-    # 3. Convert standalone headings thành text đậm.
-    for cmd in heading_cmds:
-        latex = re.sub(
-            rf"\\{cmd}\{{([^{{}}]*)\}}",
-            r"\\vspace{0.5em}\\noindent\\textbf{\1}\\par",
-            latex,
-            flags=re.DOTALL,
-        )
-
-    # 4. Safety net: nếu vẫn còn dạng hỏng:
-    # \hypertarget{id}{\vspace{0.5em}\noindent\textbf{Title}\par}
-    latex = re.sub(
-        r"\\hypertarget\{[^{}]*\}\{\s*(\\vspace\{0\.5em\}\\noindent\\textbf\{[^{}]*\}\\par)\s*\}",
-        r"\1",
-        latex,
-        flags=re.DOTALL,
-    )
-    latex = re.sub(
-        r"(\\vspace\{0\.5em\}\\noindent\\textbf\{[^{}]*\}\\par)\}",
-        r"\1",
-        latex,
-        flags=re.DOTALL,
-    )
-
+    for cmd in ["section", "subsection", "subsubsection", "paragraph", "subparagraph"]:
+        latex = latex.replace(f"\\{cmd}{{", r"\vspace{0.5em}\noindent\textbf{")
     return latex
 
 def compact_longtables(latex):
@@ -688,7 +641,7 @@ def convert_to_latex(md_text, source_path=None):
                 [
                     "pandoc",
                     tmp_in,
-                    "-f", "markdown+raw_tex+fenced_divs+bracketed_spans",
+                    "-f", "markdown-auto_identifiers+raw_tex+fenced_divs+bracketed_spans",
                     "-t", "latex",
                     "--top-level-division=section",
                     "--lua-filter", LUA_FILTER,

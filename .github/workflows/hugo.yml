@@ -93,14 +93,7 @@ jobs:
           }
           cp main.pdf ../report_vn.pdf
 
-      - name: Compile English PDF
-        working-directory: report
-        run: |
-          latexmk -pdf -interaction=nonstopmode main_en.tex
-          latexmk -pdf -interaction=nonstopmode main_en.tex
-          latexmk -pdf -interaction=nonstopmode main_en.tex
-          cp main_en.pdf ../report_en.pdf
-      
+
       - name: Package LaTeX source
         run: |
           zip -r latex_source.zip report scripts content config.toml \
@@ -123,9 +116,8 @@ jobs:
             Automated PDF generation from Hugo content on push to `main`.
 
             - **Vietnamese**: `report_vn.pdf`
-            - **English**: `report_en.pdf`
             - **LaTeX source**: `latex_source.zip`
-          artifacts: "report_vn.pdf,report_en.pdf,latex_source.zip"
+          artifacts: "report_vn.pdf,latex_source.zip"
           allowUpdates: true
           removeArtifacts: true
           makeLatest: true

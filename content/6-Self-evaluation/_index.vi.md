@@ -6,8 +6,9 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Chương trình thực tập First Cloud AI Journey (FCAJ)** từ **01/06/2026** đến **15/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **phát triển dự án ứng dụng trí tuệ nhân tạo (AI) áp dụng kiến trúc phân tán (Microservices) và truy hồi tri thức nâng cao (Advanced RAG) trên nền tảng điện toán đám mây với vai trò tự định hướng là Kỹ sư AI (AI Engineer)**, qua đó cải thiện kỹ năng **lập trình hệ thống backend, thiết kế kiến trúc AI đàn hồi, tối ưu hóa chi phí điện toán đám mây (FinOps), giám sát và đánh giá mô hình ngôn ngữ lớn (Observability), soạn thảo tài liệu hướng dẫn kỹ thuật và làm việc nhóm dưới áp lực cao**.  
+Trong suốt quá trình tham gia **Chương trình thực tập First Cloud AI Journey (FCAJ)** từ ngày **01/06/2026** đến **15/08/2026**, tôi đã có cơ hội quý báu để chuyển hóa những kiến thức nền tảng từ nhà trường thành kinh nghiệm thực tiễn trong một môi trường làm việc chuyên nghiệp.
+
+Với vai trò là một **Kỹ sư AI (AI Engineer)**, tôi đã trực tiếp tham gia **phát triển dự án ứng dụng Trí tuệ Nhân tạo (AI) tích hợp Kiến trúc Phân tán (Microservices) và hệ thống Truy hồi Tri thức Nâng cao (Advanced RAG) trên nền tảng Điện toán Đám mây (AWS)**. Trải nghiệm này không chỉ giúp tôi củng cố tư duy **lập trình hệ thống backend** mà còn phát triển toàn diện các nhóm kỹ năng chuyên sâu như: **thiết kế kiến trúc AI mở rộng linh hoạt, tối ưu hóa chi phí đám mây (FinOps), đo lường và giám sát Mô hình Ngôn ngữ Lớn (LLMOps/Observability)**, cùng với các kỹ năng mềm quan trọng như **soạn thảo tài liệu kỹ thuật chuẩn mực và làm việc nhóm hiệu quả dưới áp lực cao**.
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
 
@@ -31,6 +32,6 @@ Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân t
 
 ### Cần cải thiện
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+* **Quản lý thời gian và kỷ luật cá nhân:** Tiếp tục rèn luyện kỹ năng tổ chức công việc và tuân thủ chặt chẽ các quy trình, tiêu chuẩn vận hành của tổ chức nhằm tối ưu hóa hiệu suất làm việc.
+* **Tư duy phân tích và giải quyết vấn đề:** Chủ động rèn luyện tư duy phản biện (Critical Thinking) để nhìn nhận vấn đề đa chiều hơn, từ đó đề xuất được các giải pháp công nghệ mang tính đột phá và tối ưu.
+* **Kỹ năng giao tiếp và xử lý tình huống:** Nâng cao kỹ năng giao tiếp chuyên nghiệp, linh hoạt hơn trong việc truyền đạt ý tưởng kỹ thuật đến các thành viên trong nhóm, cũng như bình tĩnh và nhạy bén hơn khi giải quyết các vấn đề phát sinh.

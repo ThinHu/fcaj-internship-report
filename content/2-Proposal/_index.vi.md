@@ -39,7 +39,7 @@ Nền tảng cung cấp giải pháp toàn diện trải qua các giai đoạn n
 ### 3. Kiến trúc giải pháp  
 Hệ thống sử dụng kiến trúc Web Multi-tier kết hợp dịch vụ AI Hybrid (Cloud Services + External SaaS + Local Host Services).  
 
-![Smart Healthcare AI Architecture](/images/2-Proposal/architecture-diagram.png)
+![Smart Healthcare AI Architecture](/images/pipeline.png)
 
 <!--
 ![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)

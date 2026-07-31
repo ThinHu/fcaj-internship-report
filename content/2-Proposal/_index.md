@@ -39,7 +39,7 @@ The platform provides a comprehensive solution covering closed-loop business pha
 ### 3. Solution Architecture  
 The system uses a Multi-tier Web architecture combined with Hybrid AI services (Cloud Services + External SaaS + Local Host Services).  
 
-![Smart Healthcare AI Architecture](/images/2-Proposal/architecture-diagram.png)
+![Smart Healthcare AI Architecture](/images/pipeline.png)
 
 <!--
 ![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
